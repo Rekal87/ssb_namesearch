@@ -14,6 +14,7 @@ body {
   font-stretch: normal;
   font-weight: normal;
   color: #162327;
+  margin: 0px;
 }
 
 a {
@@ -80,6 +81,10 @@ a {
   flex: 1 0 0%;
 }
 
+.col-md-8 {
+  width: 66.66666667%;
+}
+
 .tabItems {
   display: -webkit-box;
     display: -ms-flexbox;
@@ -120,6 +125,21 @@ a {
 
 .no-margin {
   margin: 0 !important;
+}
+
+.name-search-input {
+  padding-top: 15px;
+}
+
+.name-search-btn {
+  margin-top: 15px;
+}
+
+.name-search {
+  border: 1px solid #075745;
+  border-top: 4px solid #1a9d49;
+  margin-top: 40px;
+  padding: 60px;
 }
 
 .sr-only {

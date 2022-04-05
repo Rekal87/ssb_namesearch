@@ -1,13 +1,9 @@
 import React from 'react';
 
-function Button({ negative, children, title, primary }) {
+function Button({ negative, children, title }) {
   return (
     <>
-      <button
-        type="button"
-        primary={true}
-        className="ssb-btn negative secondary-btn"
-      >
+      <button type="button" className="ssb-btn negative secondary-btn">
         {title}
       </button>
       {children}
