@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Input from './Input';
 import data from './../nameSearchPop300.json';
 import Divider from './Divider';
@@ -53,43 +53,43 @@ function SearchField() {
 
   return (
     <div>
-      <div className="container">
-        <div className="name-search">
-          <div className="name-search-input">
-            <div className="row">
-              <div className="col-lg-12">
-                <h2 className="ssb-title">Navnsøk</h2>
+      <div className='container'>
+        <div className='name-search'>
+          <div className='name-search-input'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <h2 className='ssb-title'>Navnsøk</h2>
               </div>
-              <div className="col-lg-12">
+              <div className='col-lg-12'>
                 <p>Hvor mange heter det samme som deg?</p>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-8">
+            <div className='row'>
+              <div className='col-md-8'>
                 {/* To stop a onChange error, swapped to form onSubmit */}
                 <form onSubmit={(e) => handleSubmit(e)}>
-                  <div className="col name-search-input">
-                    <label htmlFor="firstName">Skriv inn fornavn:</label>
+                  <div className='col name-search-input'>
+                    <label htmlFor='firstName'>Skriv inn fornavn:</label>
                     <Input
-                      type="text"
-                      placeholder="Fornavn"
-                      label="firstName"
-                      name="firstnameInput"
+                      type='text'
+                      placeholder='Fornavn'
+                      label='firstName'
+                      name='firstnameInput'
                     />
                   </div>
-                  <div className="col name-search-input">
-                    <label htmlFor="lastName">Skriv inn etternavn:</label>
+                  <div className='col name-search-input'>
+                    <label htmlFor='lastName'>Skriv inn etternavn:</label>
                     <Input
-                      type="text"
-                      placeholder="Etternavn"
-                      label="lastName"
-                      name="lastnameInput"
+                      type='text'
+                      placeholder='Etternavn'
+                      label='lastName'
+                      name='lastnameInput'
                     />
                   </div>
                   <button
-                    className="ssb-btn primary-btn name-search-btn"
-                    type="submit"
+                    className='ssb-btn primary-btn name-search-btn'
+                    type='submit'
                   >
                     Se resultatet
                   </button>
@@ -98,9 +98,9 @@ function SearchField() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className='row'>
           {isSubmitted && person?.count > 3 && (
-            <section className="result-section">
+            <section className='result-section'>
               <h2>Resultat</h2>
               <Divider />
               <p>
@@ -120,7 +120,7 @@ function SearchField() {
           )}
 
           {isSubmitted && (!person || person?.count <= 3) && (
-            <section className="result-section">
+            <section className='result-section'>
               <h2>Resultat</h2>
               <Divider />
               <p>
