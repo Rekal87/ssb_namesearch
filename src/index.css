@@ -958,8 +958,10 @@ a {
 .ssb-footer-wrapper {
   background: #274247;
   box-sizing: border-box;
+  bottom: 0px;
   color: #fff;
   padding: 36px 112px 58px;
+  position: absolute;
   width: 100%;
 }
 .ssb-footer-wrapper .top-row {
